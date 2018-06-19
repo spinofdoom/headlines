@@ -7,3 +7,5 @@ This Python script seeks to address that. When you run headlines.py, it:
    - quickly writes them as standard blue hyperlinks to a plain HTML page, 
       
    - then launches that page in the system default browser.
+
+[Requires Python 3.6]
