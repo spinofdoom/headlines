@@ -5,19 +5,19 @@ import requests
 
 home = expanduser('~')
 today = str(date.today())
-newsApiKey = ''     # Save your keys here.
-guardianApiKey = '' # Free API keys can be generated from
+news_api_key = ''        #   Save your keys here.
+guardian_api_key = '' #  Free API keys can be generated from
                     #   News API (https://newsapi.org/register) and the
-                    #     Guardian (https://open-platform.theguardian.com/access/).
-if newsApiKey == '':
-    newsApiKey = input('Input NewsAPI key: ')
-if guardianApiKey == '':                               # If you don't have your
-    guardianApiKey = input('Input Guardian API key: ') # API keys saved above,
+                    # Guardian (https://open-platform.theguardian.com/access/).
+if news_api_key == '':
+    news_api_key = input('Input NewsAPI key: ')
+if guardian_api_key == '':                             # If you don't have your
+    guardian_api_key = input('Input Guardian API key: ')# API keys saved above,
                                                        # they are prompted for.
 
 def news_api_grab(news_source):
-    url = (f'''https://newsapi.org/v2/top-headlines?sources='''
-           f'''{news_source}&apiKey={news_api_key}''')
+    url =  (f'''https://newsapi.org/v2/top-headlines?sources='''
+            f'''{news_source}&apiKey={news_api_key}''')
     response = requests.get(url)
     data = response.json()                      #   Grabs NewsApi Headlines
     site, name, body = '', '', ''               #   from specified source
