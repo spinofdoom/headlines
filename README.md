@@ -8,4 +8,4 @@ This Python script seeks to address that. When you run headlines.py, it:
       
    - then launches that page in the system default browser.
 
-[Requires Python 3.6]
+[Requires Python 3.6 and free API keys from [NewsAPI](https://newsapi.org/register) and [The Guardian](https://open-platform.theguardian.com/access/).]
