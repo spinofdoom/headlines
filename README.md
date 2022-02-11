@@ -2,7 +2,7 @@
 Top news sites are beautifully designed, but their links don't often show at quick glance which articles have been read.
 This Python script seeks to address that. When you run headlines.py, it:
 
-   - grabs top headlines from NYT, Guardian (U.S.), AJ: English, and WaPo through json API data (no scraping, no guilt), 
+   - grabs top headlines from NYT, Guardian (U.S.), AJ: English, and WaPo through json API data, 
 
    - quickly writes them as standard blue hyperlinks to a plain HTML page, 
       
